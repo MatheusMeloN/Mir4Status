@@ -48,11 +48,13 @@
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="319dp"
-        android:layout_height="159dp"
-        android:layout_marginTop="60dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="245dp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toStartOf="@+id/guideline4"
         app:layout_constraintStart_toStartOf="@+id/guideline7"
-        app:layout_constraintTop_toTopOf="@+id/guideline8"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/miralogo" />
 
     <TextView
@@ -88,4 +90,14 @@
         android:inputType="textPassword"
         app:layout_constraintStart_toStartOf="@+id/textView5"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="199dp"
+        android:text="Logar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 </androidx.constraintlayout.widget.ConstraintLayout>
